@@ -1,0 +1,353 @@
+portfolio/
+├── index.html
+├── styles/
+│   └── style.css
+├── scripts/
+│   └── script.js
+├── images/
+│   └── [your-images-here]
+└── [other-assets]
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #181818;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Landing Section */
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+/*Slider section*/
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.slider {
+    display:flex;
+    height:550px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    animation: slide 40s infinite;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0%);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(-300%);}
+    133% {transform: translateX(-400%);}
+    166% {transform: translateX(-500%);}
+    200% {transform: translateX(-600%);}
+    233% {transform: translateX(-700%);}
+    266% {transform: translateX(-800%);}
+    300% {transform: translateX(-900%);}
+}
+
+/*Appointments*/
+.appointment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.appointment h2 {
+    color: white;
+    margin: 0;
+}
+
+.appointment button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #d3e1ff;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment button:hover {
+    background-color: #e4e4e4;
+}
+
+/* Client Journey Styles */
+#client-journey {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#client-journey h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.journey-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.step-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.step-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.step-content p {
+    margin: 0;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .journey-step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-icon {
+        margin-bottom: 10px;
+    }
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin: 10px;
+}
+
+.project p {
+    margin: 10px;
+    color: #555;
+}
+
+/* About Section as Quote */
+#about {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+#about blockquote {
+    font-size: 24px;
+    font-style:normal;
+    color: #555;
+    border-left: 4px solid #333;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+
+#about blockquote:before {
+    content: open-quote;
+    font-size: 50px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    color: #aaa;
+}
+
+#about blockquote:after {
+    /*content: close-quote;*/
+    font-size: 50px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    color: #f0f0f0;
+}
+
+#about blockquote p {
+    margin: 30;
+}
+
+#about blockquote footer {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #ddd;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.column {
+    max-width: 200px;
+}
+
+.column h3 {
+    border-bottom: 2px solid #777;
+    padding-bottom: 5px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+/* Gallery Styles */
+#gallery {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
