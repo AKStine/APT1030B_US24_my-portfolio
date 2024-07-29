@@ -36,3 +36,15 @@ darkModeStyles.textContent = `
     }
 `;
 document.head.appendChild(darkModeStyles);
+
+//Book a Discovery Call Widget
+document.getElementById('toggle-discovery').addEventListener('click', function () {
+    var widget = document.getElementById('discovery-widget');
+    widget.classList.toggle('minimized');
+    var content = widget.querySelector('.discovery-content');
+    if (widget.classList.contains('minimized')) {
+        content.style.display = 'none';
+    } else {
+        content.style.display = 'block';
+    }
+});
