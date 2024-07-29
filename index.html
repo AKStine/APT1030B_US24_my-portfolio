@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
+<!-- Header Section -->
+<header class="site-header">
+    <div class="logo-name-container">
+        <img src="dk-black.png" alt="Logo" class="logo">
+        <span class="site-name">Dustine Kibagendi</span>
+    </div>
+</header>
+
 <body>
     <!-- Navigation Bar -->
     <nav>
@@ -43,7 +52,55 @@
         </div>
     </section>
 
-<!-- About Section -->
+<!-- About Me Section -->
+<section id="about">
+    <div class="about-container">
+        <div class="portrait">
+            <img src="127.jpg" alt="Portrait of Dustine Kibagendi">
+        </div>
+        <div class="introduction">
+            <h4>Hello!</h4>
+            <p>I am a dedicated Brand Strategy Consultant, Graphic Designer, Writer, and student at USIU-Africa.</p>
+            <p>I am passionate about graphic design and brand strategy, with a keen interest in software development and writing. I strive to deliver excellence in every project I undertake. My journey in the world of design and branding has been fueled by a passion for creativity and innovation.</p>
+            <p>I've had the pleasure of working with diverse clients, helping them transform their visions into reality. From the first brainstorming session to the final product, I guide my clients every step of the way, ensuring each milestone is celebrated and every goal is achieved.</p>
+            <p>I believe in crafting unique solutions that not only meet but exceed expectations, promising a future where your brand shines brighter than ever. Let's embark on this exciting journey together!<br> Book a <strong>discovery call</strong> with me today, and let's start building your brand's future.</p>
+        </div>
+    </div>
+
+    <div class="proficiency">
+        <h4>Software Proficiencies</h4>
+        <div class="icon-grid">
+            <!-- Add your software icons here -->
+            <div class="icon"><img src="in-design.png" alt="AdobeInDesign"></div>
+            <div class="icon"><img src="illustrator.png" alt="AdobeIllustrator"></div>
+            <div class="icon"><img src="lightroom.png" alt="AdobeLightroom"></div>
+            <div class="icon"><img src="after-effects.png" alt="AdobeAfterEffects"></div>
+            <div class="icon"><img src="audition.png" alt="AdobeAudition"></div>
+            <div class="icon"><img src="photoshop.png" alt="AdobePhotoshop"></div>
+            <div class="icon"><img src="mailchimp.png" alt="Mailchimp"></div>
+            <div class="icon"><img src="wordpress.png" alt="Wordpress"></div>
+            <div class="icon"><img src="slack.png" alt="Slack"></div>
+            <div class="icon"><img src="airtable.png" alt="Airtable"></div>
+            <div class="icon"><img src="zendesk.png" alt="Zendesk"></div>
+            <div class="icon"><img src="yodeck.png" alt="Yodeck"></div>
+            <div class="icon"><img src="monday.png" alt="Monday"></div>
+            <div class="icon"><img src="figma.png" alt="Figma"></div>
+            <div class="icon"><img src="canva.png" alt="Canva"></div>
+
+            <div class="icon"><img src="html.png" alt="HTML5"></div>
+            <div class="icon"><img src="css.png" alt="CSS3"></div>
+            <div class="icon"><img src="javascript.png" alt="JavaScript"></div>
+            <div class="icon"><img src="python.png" alt="Python"></div>
+            <div class="icon"><img src="java.png" alt="Java"></div>
+            <div class="icon"><img src="c-sharp.png" alt="C-sharp"></div>
+            <div class="icon"><img src="c++.png" alt="C++"></div>
+            <div class="icon"><img src="c.png" alt="C"></div>
+            <!-- Add more icons as needed -->
+        </div>
+    </div>
+</section>
+
+    <!-- About Section 
 <section id="about">
     <blockquote>
         <p>
@@ -52,18 +109,18 @@
         </p>
         <footer>— Dustine Kibagendi</footer>
     </blockquote>
-</section>
+</section> -->
 
     <!-- Client Journey Section -->
 <section id="client-journey">
-    <h2>Client Journey</h2>
-    <p><div class="journey-step">
+    <p><h2>Client Journey</h2></p>
+    <div class="journey-step">
         <div class="step-icon">1</div>
         <div class="step-content">
             <h3>Discovery Call</h3>
             <p>Initial meeting to understand your needs and goals.</p>
         </div>
-    </p></div>
+    </div>
     <div class="journey-step">
         <div class="step-icon">2</div>
         <div class="step-content">
@@ -163,7 +220,7 @@
                 <img src="pexels-saulo-leite-1491182-27254207.jpg" alt="USIU-A Grading Program">
                 <h3>USIU-A GRADING PROGRAM</h3>
                 <p>USIU-A students are able to promt the program for an immediate indication of their grades as per the school grading system. This helps them to quickly ascertain the nature of their grades without manual cross-referencing against the grading system.</p>
-                <button><a href="https://github.com/AKStine/USIU-A-Grading-Program" class="btn">View Project</a></button>
+                <button><a href="https://akstine.github.io/USIU-A-Grading-Program/" class="btn">View Project</a></button>
             </div>
             <!-- Add more projects as needed -->
         </div>
@@ -173,13 +230,23 @@
     <section id="contact">
         <h2>Contact</h2>
         <form>
-            <p>Let's get you booked for a <strong>10-minute</strong> <upper>Discovery Call</upper></p>
+            <p>Let's get you booked for a <strong>15-minute</strong> <upper>Discovery Call</upper></p>
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Make Appointment</button>
         </form>
     </section>
+
+    <!-- Book a Discovery Call Section -->
+<div id="discovery-widget" class="discovery-widget minimized">
+    <button id="toggle-discovery" class="toggle-discovery">Book a Discovery Call</button>
+    <div class="discovery-content">
+        <p>Get in touch with me:</p>
+        <a href="mailto:dkdesign254@gmail.com" class="contact-link">Send an Email</a>
+        <a href="tel:+254741433821" class="contact-link">Call Me</a>
+    </div>
+</div>
 
     <!-- Footer -->
     <footer>
